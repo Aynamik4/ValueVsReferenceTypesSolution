@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
+﻿/* 2025-04-12 */
+
+using System;
 
 namespace ConsoleApp1
 {
