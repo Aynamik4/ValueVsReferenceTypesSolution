@@ -32,7 +32,7 @@ internal class Person
         };
 
         foreach (string watch in WatchCollection)
-            person.WatchCollection.Add(new string(watch));
+            person.WatchCollection.Add(watch);
 
         return person;
 

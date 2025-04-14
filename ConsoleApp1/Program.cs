@@ -8,8 +8,9 @@ namespace ConsoleApp1
     {
         static void Main()
         {
-            //ValueTypesDemo();
-            ReferenceTypesDemo();
+            //System.ValueType
+            ValueTypesDemo();
+            //ReferenceTypesDemo();
         }
 
         private static void ValueTypesDemo()
@@ -17,8 +18,8 @@ namespace ConsoleApp1
             int i = 10;
             int j = i;
             i = 20;
+
             Console.WriteLine($"i: {i}");
-            Console.WriteLine();
             Console.WriteLine($"j: {j}");
             Console.WriteLine("-------------------------------");
 
@@ -46,9 +47,9 @@ namespace ConsoleApp1
                 ]
             };
 
-            Person you = me;
+            //Person you = me;
             //Person you = me.ShallowClone();
-            //Person you = me.DeepClone();
+            Person you = me.DeepClone();
             //Person you = me.JSON_DeepClone();
 
             you.Name = "Pontus";
